@@ -112,6 +112,19 @@
     <section class="page-section contact" id="contact">
       </section>
   </main>
+  <form>
+    <input type="text" id="email" />
+  </form>
+  <script>
+  
+  function signUp(event) {
+    event.preventDefault();
+    let input = document.querySelector("#email");
+    console.log(input.value);
+  }
+  let form = document.querySelector("form");
+  form.addEventListener("submit", signUp);
+  </script>
 </body>
 
 </html>
